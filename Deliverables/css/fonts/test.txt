@@ -1,0 +1,9 @@
+url(fonts/Raleway-Black.ttf),
+  url(fonts/Raleway-BlackItalic.ttf),
+  url(fonts/Raleway-Bold.ttf),
+  url(fonts/Raleway-BoldItalic.ttf),
+  url(fonts/Raleway-ExtraBold.ttf),
+  url(fonts/Raleway-Italic.ttf),
+  url(fonts/Raleway-Light.ttf),
+  url(fonts/Raleway-Medium.ttf),
+  url(fonts/Raleway-Thin.ttf);
