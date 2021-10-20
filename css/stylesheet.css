@@ -20,14 +20,14 @@
 
 html {
   scroll-behavior: smooth;
+  height: 500px;
 }
 
 body {
   margin: auto;
-  width: 992px;
-  height: 900px;
-  padding-left: 26px;
-  padding-top: 25px;
+  width: 998px;
+  height: 500px;
+  padding: 20px;
   font-family: Raleway;
 }
 
@@ -58,17 +58,68 @@ header>p {
 }
 
 header {
-  height: 230px;
-  width: 650px;
+  width: auto;
+  height: 180px;
 }
 
 #logo {
+  height: 40px;
+  width: 720px;
+}
+
+#logo>img {
   height: 30px;
   width: 65px;
   padding-bottom: 10px;
 }
 
+#head-welcome {
+  width: 350px;
+  height: 50px;
+}
 
+#acc-act-menu {
+  width: auto;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+#acc-act-menu>div {
+  display: flex;
+  flex-flow: row;
+}
+
+#acc-act-menu>div>div {
+  width: 100px;
+  height: 50px;
+ 
+}
+
+#acc-act-menu>div>div>a {
+  font-size: 12px;
+  text-decoration: none;
+  color:black;
+  padding: 21px 15px 21px 15px;
+  font-size: 13px;
+  border-top-style: solid; 
+  border-color: #F2F2F2ff;
+  border-width: 2px; 
+}
+
+
+#acc-act-menu>div>div>a:hover  {
+  color: #0065FC;
+  border-top-style: solid;
+  border-width: 2px;  
+  border-color: #0065FC;
+}
+#acc-act-menu>div>div:focus  {
+  color: #0065FC;
+
+}
 
 #search-bar {
   width: 256px;
@@ -122,24 +173,37 @@ header {
   border-radius: 0px 13px 13px 0px;
 }
 
-.filters {
-  box-sizing: content-box;
+.filters-box {
+
   display: flex;
   flex-flow: row;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  height: 130px;
+  width: auto;
   text-align:center;
-  vertical-align: center;
+  padding-top: 10px;
 }
 
-.filters>h2 {
+.filters-box>h2 {
   height: 20px;
   width: 50px;
   margin-right: 15px;
   font-family: Raleway-extra-bold;
 }
 
+.filters {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  text-align:center;
+  justify-content: space-evenly;
+}
+
+
 .filters>div {
+  box-sizing: content-box;
   margin: 5px;
+  height: 25px;
   border-style: solid;
   border-color: #dfdede;
   border-width: 2px;
@@ -173,61 +237,29 @@ header {
   background-color: #F2F2F2;
 } 
 
-.filters>div>a>i:hover {
+.filters>div:hover >a>i {
   color: #deebff;
   background-color: #0065FC;
 }
 
-#acc-act-menu {
-  position: absolute;
-  top: 1px;
-  right: 300px;
-  width: 250px;
-  height: 130px;
-  display: flex;
-  flex-flow: row;
-}
-
-#acc-act-menu>div {
-  float: left;
-  text-align: center;
-  width: 100px;
-  padding: 15px;
-  border-top-style: solid; 
-  border-color: transparent;
-  border-width: 2px; 
-}
-
-#acc-act-menu>div>a {
-  font-size: 12px;
-  text-decoration: none;
-  color:black;
-  padding: 20px;
-}
-
-
-#acc-act-menu>div>a:hover  {
-  color: #0065FC;
-  border-top-style: solid;
-  border-width: 2px; 
-  border-color: #0065FC;
-}
-#acc-act-menu>div>a:focus  {
-  color: #0065FC;
-  border-top-style: solid;
-  border-width: 2px;  
-  border-color: #0065FC;
-}
-
-
-
 #Accomodations {
   width: 998px;
-  height: 520px;
+  height: 450px;
   padding: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
 
-#Accomodations>i {
+#Accomodations>span {
+  width: auto;
+  height: 30px;
+  display: flex;
+  flex-flow: row;
+  padding-top: 5px;
+}
+
+#Accomodations>span>span>i {
   display: inline;
   border-style: solid;
   border-color: #F2F2F2;
@@ -237,28 +269,44 @@ header {
   border-radius: 100px;
   font-size: 7px;
   margin-left: 10px;
+  margin-right: 5px;
 }
 
-#Accomodations>p {
+#Accomodations>span>span>p {
   display: inline;
   font-family: Raleway;
+  padding-left: 0px;
 }
 
 #Accomodations>div {
   display: flex;
   flex-flow: row;
-  width: 998px;
+  width: auto;
   height: 900px;
+  justify-content: flex-end;
 }
 
 #AccM {
   margin: 10px;
-  width: 600px;
-  height: 450px;
+  width: auto;
+  height: 420px;
   display: inline;
   background-color: #F2F2F2;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+#AccM>span {
+  height: 30px; 
+  padding: 5px;
+  padding-left: 10px;
+}
+
+#AccM>h2 {
+  padding: 15px;
+  padding-left: 20px;
 }
 
 #AccM>h2>a {
@@ -270,25 +318,30 @@ header {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  
 }
 
-#AccM>div>div {
+.map-acc>div {
   background-color: white;
-  width: 170px;
-  height: 145px;
-  margin: 10px;
+  width: 175px;
+  height: 125px;
   padding: 5px;
   border-radius: 20px;
   box-shadow: 0 6px 10px 0 #e0e0e0;
 }
 
+.map-acc {
+  width: 175px;
+  height: 125px;
+  padding: 15px;
+  text-decoration: none;
+  color:black;
+}
 
-#AccM>div>div>img {
-  width: 170px;
-  height: 90px;
+.map-acc>div>img {
+  width: 175px;
+  height: 70px;
   position: relative;
-  overflow: hidden;
+  object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   display: inline;
 }
@@ -329,7 +382,7 @@ header {
 #Popular {
   margin: 10px;
   width: 270px;
-  height: 450px;
+  height: 400px;
   padding: 20px;
   display: inline;
   background-color: #F2F2F2;
@@ -350,14 +403,21 @@ header {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-
+  margin-top: 10px;
 }
 
-#Popular>div>div {
-  background-color: white;
+.map-pop {
   width: 240px;
+  height: 110px;
+  margin: 5px;
+  text-decoration: none;
+  color:black;
+}
+
+.map-pop>div {
+  background-color: white;
+  width: 230px;
   height: 100px;
-  margin: 10px;
   padding: 5px;
   display: flex;
   flex-flow: row;
@@ -365,11 +425,12 @@ header {
   box-shadow: 0 6px 10px 0 #e0e0e0;
 }
 
-#Popular>div>div>img {
+.map-pop>div>img {
   width: 100px;
   height: 100px;
   position: relative;
   display: inline;
+  object-fit: cover;
   border-radius: 15px 0px 0px 15px;
 }
 
@@ -407,9 +468,9 @@ header {
 }
 
 #Activities{
-  width: 998px;
+  width: auto;
   height: 400px;
-  padding: 10px;
+  padding: 20px;
 }
 
 #Activities>div {
@@ -439,6 +500,7 @@ header {
   width: 230px;
   height: 280px;
   border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
 .short {
@@ -464,10 +526,11 @@ header {
   width: 230px;
   height: 115px;
   border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
 footer {
-  width: 998px;
+  width: auto;
   height: 150px;
   background-color: #F2F2F2;
   display: flex;
@@ -494,3 +557,174 @@ footer>div>p>a {
   color:black;
 }
 
+
+/* Responsive for Phones*/
+
+@media only screen and (max-width: 768px) {
+  
+  html {
+    height: 3440px;
+  }
+
+  body {
+    width: auto;
+    height: 2500px;
+  }
+
+  header {
+    width: auto;
+    height: 250px;
+    padding: 5px;
+  }
+
+  #logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  #logo>img {
+    height: 35px;
+    width: 75px;
+  }
+  
+  #head-welcome {
+    width: auto;
+    height: 50px;
+  }
+  
+  #acc-act-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 80px;
+  }
+
+  #acc-act-menu>div>div>a {
+    font-size: 12px;
+    text-decoration: none;
+    color:black;
+    padding: 21px 15px 10px 15px;
+    font-size: 13px;
+    border-top-style: none;
+    border-bottom-style: solid; 
+    border-color: #F2F2F2ff;
+    border-width: 2px; 
+  }
+  
+  #acc-act-menu>div>div>a:hover  {
+    color: #0065FC;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width: 2px;  
+    border-color: #0065FC;
+  }
+  #acc-act-menu>div>div:focus  {
+    color: #0065FC;
+  }
+
+  #Accomodations {
+    width: auto;
+    height: 1550px;
+    padding: 5px;
+    justify-content: flex-start;
+  }
+
+  #Accomodations>div {
+    display: flex;
+    flex-flow: column-reverse;
+    width: auto;
+    height: 1300px;
+    justify-content: flex-end;
+  }
+
+  #Popular {
+    margin-top: 20px;
+    width: 300px;
+    height: 430px;
+    padding: 5px;
+    padding-top: 20px;
+    border-radius: 0px;
+  }
+
+  #Popular>div {
+    align-items: center;
+  }
+
+  .map-pop {
+    width: 260px;
+  }
+  
+  .map-pop>div {
+    width: 250px;
+  }
+
+  #AccM {
+    margin: 10px;
+    width: auto;
+    height: 400px;
+    background-color: transparent;
+    padding: 5px;
+  }
+  
+  #AccM>div {
+    flex-flow: column;
+  }
+
+  .map-acc {
+    width: 250px;
+  }
+
+  .map-acc>div {
+    width: 250px;
+  }
+  
+  
+  .map-acc>div>img {
+    width: 250px;
+  }
+
+  #Activities {
+    height: 1050px;
+}
+
+  #Activities>div {
+    display: flex;
+    flex-flow: row;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .longpic {
+    width: 250px;
+    height: 153px;
+  }
+
+  .longpic>img {
+    width: 250px;
+    height: 115px;
+  }
+
+  .shortpic {
+    width: 250px;
+    padding-left: -10px;
+    margin: 10px 10px 0px 0px;
+  }
+  
+  
+  .shortpic>img {
+    width: 250px;
+  }
+
+  footer {
+    width: auto;
+    display: flex;
+    flex-flow: row;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  footer>div {
+    width: auto;
+  }
+  
+}
