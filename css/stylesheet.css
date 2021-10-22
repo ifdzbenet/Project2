@@ -85,6 +85,7 @@ header {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #acc-act-menu>div {
@@ -201,7 +202,6 @@ header {
 
 
 .filters>div {
-  box-sizing: content-box;
   margin: 5px;
   height: 25px;
   border-style: solid;
@@ -210,6 +210,16 @@ header {
   border-radius: 50px;
   padding: 3px 3px 3px 3px;
   border-left: transparent;
+  display: flex;
+  flex-flow: row;
+}
+
+.short-filter {
+  width: 120px;
+}
+
+.long-filter {
+  width: 145px;
 }
 
 .filters>div>a {
@@ -243,7 +253,7 @@ header {
 }
 
 #Accomodations {
-  width: 998px;
+  width: 980px;
   height: 450px;
   padding: 5px;
   display: flex;
@@ -288,7 +298,7 @@ header {
 
 #AccM {
   margin: 10px;
-  width: auto;
+  width: 650px;
   height: 420px;
   display: inline;
   background-color: #F2F2F2;
@@ -305,7 +315,7 @@ header {
 }
 
 #AccM>h2 {
-  padding: 15px;
+  padding: 5px;
   padding-left: 20px;
 }
 
@@ -318,28 +328,30 @@ header {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  margin: 10px;
+  justify-content: space-between;
 }
 
 .map-acc>div {
   background-color: white;
-  width: 175px;
-  height: 125px;
+  width: 185px;
+  height: 135px;
   padding: 5px;
   border-radius: 20px;
   box-shadow: 0 6px 10px 0 #e0e0e0;
 }
 
 .map-acc {
-  width: 175px;
-  height: 125px;
-  padding: 15px;
+  width: 185px;
+  height: 135px;
+  margin: 12px 12px 12px 0px;
   text-decoration: none;
   color:black;
 }
 
 .map-acc>div>img {
-  width: 175px;
-  height: 70px;
+  width: 185px;
+  height: 80px;
   position: relative;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
@@ -389,14 +401,13 @@ header {
   border-radius: 20px;
 }
 
-#Popular>h1 {
-  display: inline;
-  margin: 10px; 
-}
-
-#Popular>i {
-  display: inline;
-  float: right;
+#Popular>span {
+  width: 250px;
+  height: 20px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #Popular>div {
@@ -404,6 +415,7 @@ header {
   flex-flow: column;
   flex-wrap: wrap;
   margin-top: 10px;
+  align-items: center;
 }
 
 .map-pop {
@@ -470,7 +482,10 @@ header {
 #Activities{
   width: auto;
   height: 400px;
-  padding: 20px;
+}
+
+#Activities{
+  padding-top: 20px;
 }
 
 #Activities>div {
@@ -479,7 +494,6 @@ header {
 }
 
 #Activities>div>div {
-  margin: 5px;
   position: relative;
 }
 
@@ -527,7 +541,7 @@ header {
 .shortpic {
   width: 230px;
   height: 153px;
-  margin: 5px;
+  margin-top: 5px;
   border-radius: 15px;
   box-shadow: 0 6px 10px 0 #e0e0e0;
   position: relative;
@@ -579,7 +593,7 @@ footer>div>p>a {
 @media only screen and (max-width: 768px) {
   
   html {
-    height: 3440px;
+    height: 3400px;
   }
 
   body {
@@ -638,6 +652,10 @@ footer>div>p>a {
     color: #0065FC;
   }
 
+  .filters-box {
+    width: auto;
+  }
+
   #Accomodations {
     width: auto;
     height: 1550px;
@@ -660,6 +678,12 @@ footer>div>p>a {
     padding: 5px;
     padding-top: 20px;
     border-radius: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  #Popular>span {
+    width: 280px;
   }
 
   #Popular>div {
@@ -684,6 +708,12 @@ footer>div>p>a {
   
   #AccM>div {
     flex-flow: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  #AccM>span>h1 {
+    margin: 0px 5px 5px 5px;
   }
 
   .map-acc {
@@ -703,11 +733,19 @@ footer>div>p>a {
     height: 1050px;
 }
 
+  #Activities>h1 {
+    margin: 10px 0px 0px 20px;
+    padding-top: 0;
+  }
+
+
+
   #Activities>div {
     display: flex;
     flex-flow: row;
     flex-direction: column;
-    padding: 15px;
+    padding: 10px;
+    align-items: center;
   }
 
   .map-act {
@@ -725,10 +763,6 @@ footer>div>p>a {
     height: 115px;
   }
 
-  .map-act-short {
-    
-  }
-
   .shortpic {
     width: 250px;
     margin: 0px 10px 0px 0px;
@@ -737,6 +771,10 @@ footer>div>p>a {
   
   .shortpic>img {
     width: 250px;
+  }
+
+  .short {
+   margin-left: -20px;
   }
 
   footer {
